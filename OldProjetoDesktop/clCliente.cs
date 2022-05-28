@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Data;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Globalization;
@@ -72,9 +73,20 @@ namespace OldProjetoDesktop
 
         }
 
-        public void PesquisaPorNome()
+        public DataTable PesquisaPorNome()
         {
+            try
+            {
+                BD._sql = "SELECT * FROM CLIENTE " +
+                         " WHERE NOME LIKE '%" + nome + "%' ";
 
+                return BD.ExecutaSelect();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro.: " + ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return null;
+            }
         }
 
         public void PesquisaPorCPFCNPJ()

@@ -33,5 +33,22 @@ namespace OldProjetoDesktop
         {
 
         }
+
+        private void clienteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmConsultaCliente consultaCliente = new frmConsultaCliente();
+            consultaCliente.ShowDialog();
+        }
+
+        private void bmtSair_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void mbtCadastroDeFuncionario_Click(object sender, EventArgs e)
+        {
+            frmCadastroFuncionario formulario = new frmCadastroFuncionario();
+            formulario.ShowDialog();
+        }
     }
 }

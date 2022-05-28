@@ -30,7 +30,6 @@ namespace OldProjetoDesktop
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCadastroFuncionario));
-            this.btnCancelar = new System.Windows.Forms.Button();
             this.btnSalvar = new System.Windows.Forms.Button();
             this.txtCPFFuncionario = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -53,26 +52,19 @@ namespace OldProjetoDesktop
             this.label6 = new System.Windows.Forms.Label();
             this.txtIdFuncionario = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
+            this.btnCancelar = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // btnCancelar
-            // 
-            this.btnCancelar.Location = new System.Drawing.Point(614, 395);
-            this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(154, 44);
-            this.btnCancelar.TabIndex = 32;
-            this.btnCancelar.Text = "Cancelar";
-            this.btnCancelar.UseVisualStyleBackColor = true;
-            // 
             // btnSalvar
             // 
-            this.btnSalvar.Location = new System.Drawing.Point(429, 395);
+            this.btnSalvar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(94)))), ((int)(((byte)(20)))));
+            this.btnSalvar.Location = new System.Drawing.Point(524, 392);
             this.btnSalvar.Name = "btnSalvar";
-            this.btnSalvar.Size = new System.Drawing.Size(154, 44);
+            this.btnSalvar.Size = new System.Drawing.Size(129, 46);
             this.btnSalvar.TabIndex = 29;
             this.btnSalvar.Text = "Salvar";
-            this.btnSalvar.UseVisualStyleBackColor = true;
+            this.btnSalvar.UseVisualStyleBackColor = false;
             // 
             // txtCPFFuncionario
             // 
@@ -252,19 +244,29 @@ namespace OldProjetoDesktop
             this.label7.TabIndex = 37;
             this.label7.Text = "ID";
             // 
+            // btnCancelar
+            // 
+            this.btnCancelar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(184)))), ((int)(((byte)(179)))));
+            this.btnCancelar.Location = new System.Drawing.Point(659, 392);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(129, 46);
+            this.btnCancelar.TabIndex = 39;
+            this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.UseVisualStyleBackColor = false;
+            // 
             // frmCadastroFuncionario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(229)))), ((int)(((byte)(219)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.txtIdFuncionario);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.txtConfirmarSenha);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.txtSenha);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnSalvar);
             this.Controls.Add(this.txtCPFFuncionario);
             this.Controls.Add(this.label5);
@@ -276,6 +278,7 @@ namespace OldProjetoDesktop
             this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmCadastroFuncionario";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cadastro de Funcionario";
             this.Load += new System.EventHandler(this.frmCadastroFuncionario_Load);
             this.menuStrip1.ResumeLayout(false);
@@ -286,8 +289,6 @@ namespace OldProjetoDesktop
         }
 
         #endregion
-
-        private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Button btnSalvar;
         private System.Windows.Forms.TextBox txtCPFFuncionario;
         private System.Windows.Forms.Label label5;
@@ -310,5 +311,6 @@ namespace OldProjetoDesktop
         private System.Windows.Forms.ToolStripMenuItem mbtCadastroDeFuncionario;
         private System.Windows.Forms.TextBox txtIdFuncionario;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Button btnCancelar;
     }
 }

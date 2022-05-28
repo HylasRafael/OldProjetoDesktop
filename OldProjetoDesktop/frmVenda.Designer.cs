@@ -180,21 +180,24 @@ namespace OldProjetoDesktop
             // 
             // btnCancelarVenda
             // 
+            this.btnCancelarVenda.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(184)))), ((int)(((byte)(179)))));
             this.btnCancelarVenda.Location = new System.Drawing.Point(894, 554);
             this.btnCancelarVenda.Name = "btnCancelarVenda";
-            this.btnCancelarVenda.Size = new System.Drawing.Size(154, 44);
+            this.btnCancelarVenda.Size = new System.Drawing.Size(129, 44);
             this.btnCancelarVenda.TabIndex = 48;
             this.btnCancelarVenda.Text = "Cancelar";
-            this.btnCancelarVenda.UseVisualStyleBackColor = true;
+            this.btnCancelarVenda.UseVisualStyleBackColor = false;
+            this.btnCancelarVenda.Click += new System.EventHandler(this.btnCancelarVenda_Click);
             // 
             // btnSalvarVenda
             // 
-            this.btnSalvarVenda.Location = new System.Drawing.Point(709, 554);
+            this.btnSalvarVenda.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(94)))), ((int)(((byte)(20)))));
+            this.btnSalvarVenda.Location = new System.Drawing.Point(759, 554);
             this.btnSalvarVenda.Name = "btnSalvarVenda";
-            this.btnSalvarVenda.Size = new System.Drawing.Size(154, 44);
+            this.btnSalvarVenda.Size = new System.Drawing.Size(129, 44);
             this.btnSalvarVenda.TabIndex = 47;
             this.btnSalvarVenda.Text = "Salvar";
-            this.btnSalvarVenda.UseVisualStyleBackColor = true;
+            this.btnSalvarVenda.UseVisualStyleBackColor = false;
             // 
             // frmVenda
             // 
@@ -220,6 +223,7 @@ namespace OldProjetoDesktop
             this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmVenda";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Vendas";
             this.Load += new System.EventHandler(this.frmVenda_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvProdutos)).EndInit();

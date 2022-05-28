@@ -53,5 +53,10 @@ namespace OldProjetoDesktop
         {
             this.Close();
         }
+
+        private void bmtSair_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

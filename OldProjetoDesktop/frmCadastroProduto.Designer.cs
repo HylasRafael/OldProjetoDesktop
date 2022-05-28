@@ -49,10 +49,10 @@ namespace OldProjetoDesktop
             this.label5 = new System.Windows.Forms.Label();
             this.txtPrecoProduto = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.btnSalvar = new System.Windows.Forms.Button();
             this.txtCategoriaProduto = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.btnCancelar = new System.Windows.Forms.Button();
+            this.btnSalvar = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -215,15 +215,6 @@ namespace OldProjetoDesktop
             this.label6.TabIndex = 11;
             this.label6.Text = "Preço R$";
             // 
-            // btnSalvar
-            // 
-            this.btnSalvar.Location = new System.Drawing.Point(429, 384);
-            this.btnSalvar.Name = "btnSalvar";
-            this.btnSalvar.Size = new System.Drawing.Size(154, 44);
-            this.btnSalvar.TabIndex = 13;
-            this.btnSalvar.Text = "Salvar";
-            this.btnSalvar.UseVisualStyleBackColor = true;
-            // 
             // txtCategoriaProduto
             // 
             this.txtCategoriaProduto.Location = new System.Drawing.Point(12, 195);
@@ -242,14 +233,27 @@ namespace OldProjetoDesktop
             this.label7.TabIndex = 14;
             this.label7.Text = "Categoria";
             // 
-            // btnCancelar
+            // btnSalvar
             // 
-            this.btnCancelar.Location = new System.Drawing.Point(614, 384);
-            this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(154, 44);
-            this.btnCancelar.TabIndex = 16;
-            this.btnCancelar.Text = "Cancelar";
-            this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnSalvar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(94)))), ((int)(((byte)(20)))));
+            this.btnSalvar.Location = new System.Drawing.Point(524, 392);
+            this.btnSalvar.Name = "btnSalvar";
+            this.btnSalvar.Size = new System.Drawing.Size(129, 46);
+            this.btnSalvar.TabIndex = 34;
+            this.btnSalvar.Text = "Salvar";
+            this.btnSalvar.UseVisualStyleBackColor = false;
+            this.btnSalvar.Click += new System.EventHandler(this.btnAtualizar_Click);
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(184)))), ((int)(((byte)(179)))));
+            this.button1.Location = new System.Drawing.Point(659, 392);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(129, 46);
+            this.button1.TabIndex = 35;
+            this.button1.Text = "Cancelar";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // frmCadastroProduto
             // 
@@ -257,10 +261,10 @@ namespace OldProjetoDesktop
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(229)))), ((int)(((byte)(219)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.btnCancelar);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnSalvar);
             this.Controls.Add(this.txtCategoriaProduto);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.btnSalvar);
             this.Controls.Add(this.txtPrecoProduto);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.txtCodigoProduto);
@@ -276,6 +280,7 @@ namespace OldProjetoDesktop
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "frmCadastroProduto";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cadastro de Produto";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
@@ -303,10 +308,10 @@ namespace OldProjetoDesktop
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtPrecoProduto;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Button btnSalvar;
         private System.Windows.Forms.TextBox txtCategoriaProduto;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.ToolStripMenuItem mbtCadastroDeFuncionario;
+        private System.Windows.Forms.Button btnSalvar;
+        private System.Windows.Forms.Button button1;
     }
 }

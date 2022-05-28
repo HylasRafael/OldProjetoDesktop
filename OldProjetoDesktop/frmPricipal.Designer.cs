@@ -38,12 +38,11 @@ namespace OldProjetoDesktop
             this.mbtCadastroDeCliente = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.bmtSair = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.pesquisarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.clienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.produtoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
-            this.sairToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.frmPrincipal.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -91,6 +90,7 @@ namespace OldProjetoDesktop
             this.mbtCadastroDeFuncionario.Name = "mbtCadastroDeFuncionario";
             this.mbtCadastroDeFuncionario.Size = new System.Drawing.Size(203, 22);
             this.mbtCadastroDeFuncionario.Text = "Cadastro de Funcionario";
+            this.mbtCadastroDeFuncionario.Click += new System.EventHandler(this.mbtCadastroDeFuncionario_Click);
             // 
             // mbtCadastroDeCliente
             // 
@@ -108,14 +108,19 @@ namespace OldProjetoDesktop
             this.bmtSair.Name = "bmtSair";
             this.bmtSair.Size = new System.Drawing.Size(203, 22);
             this.bmtSair.Text = "Sair";
+            this.bmtSair.Click += new System.EventHandler(this.bmtSair_Click);
+            // 
+            // toolStripSeparator2
+            // 
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 23);
             // 
             // pesquisarToolStripMenuItem
             // 
             this.pesquisarToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.clienteToolStripMenuItem,
             this.produtoToolStripMenuItem,
-            this.toolStripSeparator3,
-            this.sairToolStripMenuItem});
+            this.toolStripSeparator3});
             this.pesquisarToolStripMenuItem.Name = "pesquisarToolStripMenuItem";
             this.pesquisarToolStripMenuItem.Size = new System.Drawing.Size(69, 23);
             this.pesquisarToolStripMenuItem.Text = "Pesquisar";
@@ -123,30 +128,20 @@ namespace OldProjetoDesktop
             // clienteToolStripMenuItem
             // 
             this.clienteToolStripMenuItem.Name = "clienteToolStripMenuItem";
-            this.clienteToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.clienteToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
             this.clienteToolStripMenuItem.Text = "Cliente";
+            this.clienteToolStripMenuItem.Click += new System.EventHandler(this.clienteToolStripMenuItem_Click);
             // 
             // produtoToolStripMenuItem
             // 
             this.produtoToolStripMenuItem.Name = "produtoToolStripMenuItem";
-            this.produtoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.produtoToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
             this.produtoToolStripMenuItem.Text = "Produto";
-            // 
-            // toolStripSeparator2
-            // 
-            this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 23);
             // 
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(177, 6);
-            // 
-            // sairToolStripMenuItem
-            // 
-            this.sairToolStripMenuItem.Name = "sairToolStripMenuItem";
-            this.sairToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.sairToolStripMenuItem.Text = "Sair";
+            this.toolStripSeparator3.Size = new System.Drawing.Size(114, 6);
             // 
             // frmPricipal
             // 
@@ -185,6 +180,5 @@ namespace OldProjetoDesktop
         private System.Windows.Forms.ToolStripMenuItem clienteToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem produtoToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
-        private System.Windows.Forms.ToolStripMenuItem sairToolStripMenuItem;
     }
 }

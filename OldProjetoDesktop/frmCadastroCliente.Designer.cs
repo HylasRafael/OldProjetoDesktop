@@ -30,7 +30,6 @@ namespace OldProjetoDesktop
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCadastroCliente));
-            this.btnCancelar = new System.Windows.Forms.Button();
             this.txtNomeCliente = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.btnSalvar = new System.Windows.Forms.Button();
@@ -51,28 +50,10 @@ namespace OldProjetoDesktop
             this.label6 = new System.Windows.Forms.Label();
             this.txtDataNascimento = new System.Windows.Forms.TextBox();
             this.label = new System.Windows.Forms.Label();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.cadastroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.mbtCadastroDeProduto = new System.Windows.Forms.ToolStripMenuItem();
-            this.mbtCadastroDeCategoria = new System.Windows.Forms.ToolStripMenuItem();
-            this.mbtCadastroDeFuncionario = new System.Windows.Forms.ToolStripMenuItem();
-            this.mbtCadastroDeCliente = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.bmtSair = new System.Windows.Forms.ToolStripMenuItem();
             this.txtTelefone = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.menuStrip1.SuspendLayout();
+            this.btnCancelar = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
-            // btnCancelar
-            // 
-            this.btnCancelar.Location = new System.Drawing.Point(616, 373);
-            this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(154, 44);
-            this.btnCancelar.TabIndex = 31;
-            this.btnCancelar.Text = "Cancelar";
-            this.btnCancelar.UseVisualStyleBackColor = true;
-            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // txtNomeCliente
             // 
@@ -94,12 +75,13 @@ namespace OldProjetoDesktop
             // 
             // btnSalvar
             // 
-            this.btnSalvar.Location = new System.Drawing.Point(431, 373);
+            this.btnSalvar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(94)))), ((int)(((byte)(20)))));
+            this.btnSalvar.Location = new System.Drawing.Point(524, 394);
             this.btnSalvar.Name = "btnSalvar";
-            this.btnSalvar.Size = new System.Drawing.Size(154, 44);
+            this.btnSalvar.Size = new System.Drawing.Size(129, 44);
             this.btnSalvar.TabIndex = 28;
             this.btnSalvar.Text = "Salvar";
-            this.btnSalvar.UseVisualStyleBackColor = true;
+            this.btnSalvar.UseVisualStyleBackColor = false;
             this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
             // 
             // txtEndereco
@@ -258,65 +240,6 @@ namespace OldProjetoDesktop
             this.label.TabIndex = 40;
             this.label.Text = "Data de Nascimento";
             // 
-            // menuStrip1
-            // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.cadastroToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(800, 24);
-            this.menuStrip1.TabIndex = 42;
-            this.menuStrip1.Text = "menuStrip1";
-            // 
-            // cadastroToolStripMenuItem
-            // 
-            this.cadastroToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(229)))), ((int)(((byte)(219)))));
-            this.cadastroToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.mbtCadastroDeProduto,
-            this.mbtCadastroDeCategoria,
-            this.mbtCadastroDeFuncionario,
-            this.mbtCadastroDeCliente,
-            this.toolStripSeparator1,
-            this.bmtSair});
-            this.cadastroToolStripMenuItem.Name = "cadastroToolStripMenuItem";
-            this.cadastroToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
-            this.cadastroToolStripMenuItem.Text = "Cadastro";
-            // 
-            // mbtCadastroDeProduto
-            // 
-            this.mbtCadastroDeProduto.Name = "mbtCadastroDeProduto";
-            this.mbtCadastroDeProduto.Size = new System.Drawing.Size(203, 22);
-            this.mbtCadastroDeProduto.Text = "Cadastro de Categoria";
-            // 
-            // mbtCadastroDeCategoria
-            // 
-            this.mbtCadastroDeCategoria.Name = "mbtCadastroDeCategoria";
-            this.mbtCadastroDeCategoria.Size = new System.Drawing.Size(203, 22);
-            this.mbtCadastroDeCategoria.Text = "Cadastro de Cliente";
-            // 
-            // mbtCadastroDeFuncionario
-            // 
-            this.mbtCadastroDeFuncionario.Name = "mbtCadastroDeFuncionario";
-            this.mbtCadastroDeFuncionario.Size = new System.Drawing.Size(203, 22);
-            this.mbtCadastroDeFuncionario.Text = "Cadastro de Funcionario";
-            // 
-            // mbtCadastroDeCliente
-            // 
-            this.mbtCadastroDeCliente.Name = "mbtCadastroDeCliente";
-            this.mbtCadastroDeCliente.Size = new System.Drawing.Size(203, 22);
-            this.mbtCadastroDeCliente.Text = "Cadastro de Produto";
-            // 
-            // toolStripSeparator1
-            // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(200, 6);
-            // 
-            // bmtSair
-            // 
-            this.bmtSair.Name = "bmtSair";
-            this.bmtSair.Size = new System.Drawing.Size(203, 22);
-            this.bmtSair.Text = "Sair";
-            // 
             // txtTelefone
             // 
             this.txtTelefone.Location = new System.Drawing.Point(476, 220);
@@ -337,6 +260,17 @@ namespace OldProjetoDesktop
             this.label10.Text = "Telefone";
             this.label10.Click += new System.EventHandler(this.label10_Click);
             // 
+            // btnCancelar
+            // 
+            this.btnCancelar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(184)))), ((int)(((byte)(179)))));
+            this.btnCancelar.Location = new System.Drawing.Point(659, 394);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(129, 44);
+            this.btnCancelar.TabIndex = 31;
+            this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.UseVisualStyleBackColor = false;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
+            // 
             // frmCadastroCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -345,7 +279,6 @@ namespace OldProjetoDesktop
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.txtTelefone);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.txtDataNascimento);
             this.Controls.Add(this.label);
             this.Controls.Add(this.txtCPFCliente);
@@ -369,18 +302,15 @@ namespace OldProjetoDesktop
             this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmCadastroCliente";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cadastro Cliente";
             this.Load += new System.EventHandler(this.frmCadastroCliente_Load);
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.TextBox txtNomeCliente;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button btnSalvar;
@@ -401,15 +331,8 @@ namespace OldProjetoDesktop
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txtDataNascimento;
         private System.Windows.Forms.Label label;
-        private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem cadastroToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem mbtCadastroDeProduto;
-        private System.Windows.Forms.ToolStripMenuItem mbtCadastroDeCategoria;
-        private System.Windows.Forms.ToolStripMenuItem mbtCadastroDeCliente;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
-        private System.Windows.Forms.ToolStripMenuItem bmtSair;
-        private System.Windows.Forms.ToolStripMenuItem mbtCadastroDeFuncionario;
         private System.Windows.Forms.TextBox txtTelefone;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Button btnCancelar;
     }
 }

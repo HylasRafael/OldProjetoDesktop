@@ -31,5 +31,10 @@ namespace OldProjetoDesktop
         {
 
         }
+
+        private void btnCancelarVenda_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
