@@ -10,21 +10,26 @@ using System.Windows.Forms;
 
 namespace OldProjetoDesktop
 {
-    public partial class frmCadastroFuncionario : Form
+    public partial class frmCadastroCategoria : Form
     {
-        public frmCadastroFuncionario()
+        public frmCadastroCategoria()
         {
             InitializeComponent();
         }
 
-        private void frmCadastroFuncionario_Load(object sender, EventArgs e)
+        private void label1_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void btnCancelar_Click(object sender, EventArgs e)
+        private void btnCancelarVenda_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void frmCadastroCategoria_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -61,7 +61,7 @@ namespace OldProjetoDesktop
             this.txtNomeCliente.Multiline = true;
             this.txtNomeCliente.Name = "txtNomeCliente";
             this.txtNomeCliente.Size = new System.Drawing.Size(776, 29);
-            this.txtNomeCliente.TabIndex = 30;
+            this.txtNomeCliente.TabIndex = 1;
             // 
             // label7
             // 
@@ -79,7 +79,7 @@ namespace OldProjetoDesktop
             this.btnSalvar.Location = new System.Drawing.Point(524, 394);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(129, 44);
-            this.btnSalvar.TabIndex = 28;
+            this.btnSalvar.TabIndex = 9;
             this.btnSalvar.Text = "Salvar";
             this.btnSalvar.UseVisualStyleBackColor = false;
             this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
@@ -90,7 +90,7 @@ namespace OldProjetoDesktop
             this.txtEndereco.Multiline = true;
             this.txtEndereco.Name = "txtEndereco";
             this.txtEndereco.Size = new System.Drawing.Size(774, 29);
-            this.txtEndereco.TabIndex = 25;
+            this.txtEndereco.TabIndex = 5;
             // 
             // label5
             // 
@@ -109,7 +109,7 @@ namespace OldProjetoDesktop
             this.txtDataCliente.Multiline = true;
             this.txtDataCliente.Name = "txtDataCliente";
             this.txtDataCliente.Size = new System.Drawing.Size(147, 29);
-            this.txtDataCliente.TabIndex = 23;
+            this.txtDataCliente.TabIndex = 0;
             // 
             // label4
             // 
@@ -138,7 +138,7 @@ namespace OldProjetoDesktop
             this.txtIDCliente.Multiline = true;
             this.txtIDCliente.Name = "txtIDCliente";
             this.txtIDCliente.Size = new System.Drawing.Size(114, 29);
-            this.txtIDCliente.TabIndex = 18;
+            this.txtIDCliente.TabIndex = 0;
             // 
             // label1
             // 
@@ -156,7 +156,7 @@ namespace OldProjetoDesktop
             this.txtBairro.Multiline = true;
             this.txtBairro.Name = "txtBairro";
             this.txtBairro.Size = new System.Drawing.Size(262, 29);
-            this.txtBairro.TabIndex = 33;
+            this.txtBairro.TabIndex = 6;
             // 
             // label8
             // 
@@ -174,7 +174,7 @@ namespace OldProjetoDesktop
             this.txtCidade.Multiline = true;
             this.txtCidade.Name = "txtCidade";
             this.txtCidade.Size = new System.Drawing.Size(239, 29);
-            this.txtCidade.TabIndex = 35;
+            this.txtCidade.TabIndex = 7;
             // 
             // label3
             // 
@@ -192,7 +192,7 @@ namespace OldProjetoDesktop
             this.txtUF.Multiline = true;
             this.txtUF.Name = "txtUF";
             this.txtUF.Size = new System.Drawing.Size(54, 29);
-            this.txtUF.TabIndex = 37;
+            this.txtUF.TabIndex = 8;
             // 
             // label9
             // 
@@ -210,7 +210,7 @@ namespace OldProjetoDesktop
             this.txtCPFCliente.Multiline = true;
             this.txtCPFCliente.Name = "txtCPFCliente";
             this.txtCPFCliente.Size = new System.Drawing.Size(254, 29);
-            this.txtCPFCliente.TabIndex = 39;
+            this.txtCPFCliente.TabIndex = 3;
             // 
             // label6
             // 
@@ -228,7 +228,7 @@ namespace OldProjetoDesktop
             this.txtDataNascimento.Multiline = true;
             this.txtDataNascimento.Name = "txtDataNascimento";
             this.txtDataNascimento.Size = new System.Drawing.Size(196, 29);
-            this.txtDataNascimento.TabIndex = 41;
+            this.txtDataNascimento.TabIndex = 2;
             // 
             // label
             // 
@@ -246,7 +246,7 @@ namespace OldProjetoDesktop
             this.txtTelefone.Multiline = true;
             this.txtTelefone.Name = "txtTelefone";
             this.txtTelefone.Size = new System.Drawing.Size(254, 29);
-            this.txtTelefone.TabIndex = 44;
+            this.txtTelefone.TabIndex = 4;
             this.txtTelefone.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // label10
@@ -266,7 +266,7 @@ namespace OldProjetoDesktop
             this.btnCancelar.Location = new System.Drawing.Point(659, 394);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(129, 44);
-            this.btnCancelar.TabIndex = 31;
+            this.btnCancelar.TabIndex = 10;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = false;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);

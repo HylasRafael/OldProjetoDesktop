@@ -31,18 +31,22 @@ namespace OldProjetoDesktop
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPricipal));
             this.frmPrincipal = new System.Windows.Forms.MenuStrip();
-            this.cadastroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.mbtCadastroDeProduto = new System.Windows.Forms.ToolStripMenuItem();
+            this.mbtCadastro = new System.Windows.Forms.ToolStripMenuItem();
             this.mbtCadastroDeCategoria = new System.Windows.Forms.ToolStripMenuItem();
-            this.mbtCadastroDeFuncionario = new System.Windows.Forms.ToolStripMenuItem();
             this.mbtCadastroDeCliente = new System.Windows.Forms.ToolStripMenuItem();
+            this.mbtCadastroDeFuncionario = new System.Windows.Forms.ToolStripMenuItem();
+            this.mbtCadastroDeProduto = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.bmtSair = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.pesquisarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.clienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.produtoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mbtPesquisar = new System.Windows.Forms.ToolStripMenuItem();
+            this.mbtPesquisaCliente = new System.Windows.Forms.ToolStripMenuItem();
+            this.mbtPesquisaProduto = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.mbtVendas = new System.Windows.Forms.ToolStripMenuItem();
+            this.mbtVender = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
             this.frmPrincipal.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -50,40 +54,44 @@ namespace OldProjetoDesktop
             // 
             this.frmPrincipal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(229)))), ((int)(((byte)(219)))));
             this.frmPrincipal.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.cadastroToolStripMenuItem,
+            this.mbtCadastro,
             this.toolStripSeparator2,
-            this.pesquisarToolStripMenuItem});
+            this.mbtPesquisar,
+            this.toolStripSeparator4,
+            this.mbtVendas,
+            this.toolStripMenuItem1});
             this.frmPrincipal.Location = new System.Drawing.Point(0, 0);
             this.frmPrincipal.Name = "frmPrincipal";
             this.frmPrincipal.Size = new System.Drawing.Size(800, 27);
             this.frmPrincipal.TabIndex = 18;
             this.frmPrincipal.Text = "Tela Principal";
             // 
-            // cadastroToolStripMenuItem
+            // mbtCadastro
             // 
-            this.cadastroToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.mbtCadastroDeProduto,
+            this.mbtCadastro.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mbtCadastroDeCategoria,
-            this.mbtCadastroDeFuncionario,
             this.mbtCadastroDeCliente,
+            this.mbtCadastroDeFuncionario,
+            this.mbtCadastroDeProduto,
             this.toolStripSeparator1,
             this.bmtSair});
-            this.cadastroToolStripMenuItem.Name = "cadastroToolStripMenuItem";
-            this.cadastroToolStripMenuItem.Size = new System.Drawing.Size(66, 23);
-            this.cadastroToolStripMenuItem.Text = "Cadastro";
-            // 
-            // mbtCadastroDeProduto
-            // 
-            this.mbtCadastroDeProduto.Name = "mbtCadastroDeProduto";
-            this.mbtCadastroDeProduto.Size = new System.Drawing.Size(203, 22);
-            this.mbtCadastroDeProduto.Text = "Cadastro de Categoria";
+            this.mbtCadastro.Name = "mbtCadastro";
+            this.mbtCadastro.Size = new System.Drawing.Size(66, 23);
+            this.mbtCadastro.Text = "Cadastro";
             // 
             // mbtCadastroDeCategoria
             // 
             this.mbtCadastroDeCategoria.Name = "mbtCadastroDeCategoria";
             this.mbtCadastroDeCategoria.Size = new System.Drawing.Size(203, 22);
-            this.mbtCadastroDeCategoria.Text = "Cadastro de Cliente";
-            this.mbtCadastroDeCategoria.Click += new System.EventHandler(this.mbtCadastroDeCategoria_Click);
+            this.mbtCadastroDeCategoria.Text = "Cadastro de Categoria";
+            this.mbtCadastroDeCategoria.Click += new System.EventHandler(this.mbtCadastroDeCategoria_Click_1);
+            // 
+            // mbtCadastroDeCliente
+            // 
+            this.mbtCadastroDeCliente.Name = "mbtCadastroDeCliente";
+            this.mbtCadastroDeCliente.Size = new System.Drawing.Size(203, 22);
+            this.mbtCadastroDeCliente.Text = "Cadastro de Cliente";
+            this.mbtCadastroDeCliente.Click += new System.EventHandler(this.mbtCadastroDeCategoria_Click);
             // 
             // mbtCadastroDeFuncionario
             // 
@@ -92,11 +100,12 @@ namespace OldProjetoDesktop
             this.mbtCadastroDeFuncionario.Text = "Cadastro de Funcionario";
             this.mbtCadastroDeFuncionario.Click += new System.EventHandler(this.mbtCadastroDeFuncionario_Click);
             // 
-            // mbtCadastroDeCliente
+            // mbtCadastroDeProduto
             // 
-            this.mbtCadastroDeCliente.Name = "mbtCadastroDeCliente";
-            this.mbtCadastroDeCliente.Size = new System.Drawing.Size(203, 22);
-            this.mbtCadastroDeCliente.Text = "Cadastro de Produto";
+            this.mbtCadastroDeProduto.Name = "mbtCadastroDeProduto";
+            this.mbtCadastroDeProduto.Size = new System.Drawing.Size(203, 22);
+            this.mbtCadastroDeProduto.Text = "Cadastro de Produto";
+            this.mbtCadastroDeProduto.Click += new System.EventHandler(this.mbtCadastroDeProduto_Click);
             // 
             // toolStripSeparator1
             // 
@@ -115,33 +124,57 @@ namespace OldProjetoDesktop
             this.toolStripSeparator2.Name = "toolStripSeparator2";
             this.toolStripSeparator2.Size = new System.Drawing.Size(6, 23);
             // 
-            // pesquisarToolStripMenuItem
+            // mbtPesquisar
             // 
-            this.pesquisarToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.clienteToolStripMenuItem,
-            this.produtoToolStripMenuItem,
+            this.mbtPesquisar.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mbtPesquisaCliente,
+            this.mbtPesquisaProduto,
             this.toolStripSeparator3});
-            this.pesquisarToolStripMenuItem.Name = "pesquisarToolStripMenuItem";
-            this.pesquisarToolStripMenuItem.Size = new System.Drawing.Size(69, 23);
-            this.pesquisarToolStripMenuItem.Text = "Pesquisar";
+            this.mbtPesquisar.Name = "mbtPesquisar";
+            this.mbtPesquisar.Size = new System.Drawing.Size(69, 23);
+            this.mbtPesquisar.Text = "Pesquisar";
             // 
-            // clienteToolStripMenuItem
+            // mbtPesquisaCliente
             // 
-            this.clienteToolStripMenuItem.Name = "clienteToolStripMenuItem";
-            this.clienteToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
-            this.clienteToolStripMenuItem.Text = "Cliente";
-            this.clienteToolStripMenuItem.Click += new System.EventHandler(this.clienteToolStripMenuItem_Click);
+            this.mbtPesquisaCliente.Name = "mbtPesquisaCliente";
+            this.mbtPesquisaCliente.Size = new System.Drawing.Size(180, 22);
+            this.mbtPesquisaCliente.Text = "Cliente";
+            this.mbtPesquisaCliente.Click += new System.EventHandler(this.clienteToolStripMenuItem_Click);
             // 
-            // produtoToolStripMenuItem
+            // mbtPesquisaProduto
             // 
-            this.produtoToolStripMenuItem.Name = "produtoToolStripMenuItem";
-            this.produtoToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
-            this.produtoToolStripMenuItem.Text = "Produto";
+            this.mbtPesquisaProduto.Name = "mbtPesquisaProduto";
+            this.mbtPesquisaProduto.Size = new System.Drawing.Size(180, 22);
+            this.mbtPesquisaProduto.Text = "Produto";
             // 
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(114, 6);
+            this.toolStripSeparator3.Size = new System.Drawing.Size(177, 6);
+            // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(12, 23);
+            // 
+            // mbtVendas
+            // 
+            this.mbtVendas.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mbtVender});
+            this.mbtVendas.Name = "mbtVendas";
+            this.mbtVendas.Size = new System.Drawing.Size(56, 23);
+            this.mbtVendas.Text = "Vendas";
+            // 
+            // mbtVender
+            // 
+            this.mbtVender.Name = "mbtVender";
+            this.mbtVender.Size = new System.Drawing.Size(180, 22);
+            this.mbtVender.Text = "Vender";
+            // 
+            // toolStripSeparator4
+            // 
+            this.toolStripSeparator4.Name = "toolStripSeparator4";
+            this.toolStripSeparator4.Size = new System.Drawing.Size(6, 23);
             // 
             // frmPricipal
             // 
@@ -168,17 +201,21 @@ namespace OldProjetoDesktop
         #endregion
 
         private System.Windows.Forms.MenuStrip frmPrincipal;
-        private System.Windows.Forms.ToolStripMenuItem cadastroToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem mbtCadastroDeProduto;
+        private System.Windows.Forms.ToolStripMenuItem mbtCadastro;
         private System.Windows.Forms.ToolStripMenuItem mbtCadastroDeCategoria;
-        private System.Windows.Forms.ToolStripMenuItem mbtCadastroDeFuncionario;
         private System.Windows.Forms.ToolStripMenuItem mbtCadastroDeCliente;
+        private System.Windows.Forms.ToolStripMenuItem mbtCadastroDeFuncionario;
+        private System.Windows.Forms.ToolStripMenuItem mbtCadastroDeProduto;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripMenuItem bmtSair;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
-        private System.Windows.Forms.ToolStripMenuItem pesquisarToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem clienteToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem produtoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem mbtPesquisar;
+        private System.Windows.Forms.ToolStripMenuItem mbtPesquisaCliente;
+        private System.Windows.Forms.ToolStripMenuItem mbtPesquisaProduto;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem mbtVendas;
+        private System.Windows.Forms.ToolStripMenuItem mbtVender;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator4;
     }
 }

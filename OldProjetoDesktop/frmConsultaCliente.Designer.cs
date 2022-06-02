@@ -45,7 +45,7 @@ namespace OldProjetoDesktop
             this.txtPesquisaCliente.Location = new System.Drawing.Point(12, 118);
             this.txtPesquisaCliente.Name = "txtPesquisaCliente";
             this.txtPesquisaCliente.Size = new System.Drawing.Size(776, 20);
-            this.txtPesquisaCliente.TabIndex = 9;
+            this.txtPesquisaCliente.TabIndex = 1;
             this.txtPesquisaCliente.TextChanged += new System.EventHandler(this.txtPesquisaCliente_TextChanged);
             // 
             // label1
@@ -82,7 +82,7 @@ namespace OldProjetoDesktop
             this.btnCancelar.Location = new System.Drawing.Point(659, 518);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(129, 46);
-            this.btnCancelar.TabIndex = 32;
+            this.btnCancelar.TabIndex = 4;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = false;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
@@ -93,7 +93,7 @@ namespace OldProjetoDesktop
             this.btnAtualizar.Location = new System.Drawing.Point(390, 518);
             this.btnAtualizar.Name = "btnAtualizar";
             this.btnAtualizar.Size = new System.Drawing.Size(129, 46);
-            this.btnAtualizar.TabIndex = 33;
+            this.btnAtualizar.TabIndex = 2;
             this.btnAtualizar.Text = "Atualizar";
             this.btnAtualizar.UseVisualStyleBackColor = false;
             // 
@@ -103,8 +103,8 @@ namespace OldProjetoDesktop
             this.btnExcluir.Location = new System.Drawing.Point(525, 518);
             this.btnExcluir.Name = "btnExcluir";
             this.btnExcluir.Size = new System.Drawing.Size(129, 46);
-            this.btnExcluir.TabIndex = 34;
-            this.btnExcluir.Text = "Exluir";
+            this.btnExcluir.TabIndex = 3;
+            this.btnExcluir.Text = "Excluir";
             this.btnExcluir.UseVisualStyleBackColor = false;
             this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
             // 

@@ -62,7 +62,7 @@ namespace OldProjetoDesktop
             this.btnSalvar.Location = new System.Drawing.Point(524, 392);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(129, 46);
-            this.btnSalvar.TabIndex = 29;
+            this.btnSalvar.TabIndex = 5;
             this.btnSalvar.Text = "Salvar";
             this.btnSalvar.UseVisualStyleBackColor = false;
             // 
@@ -72,7 +72,7 @@ namespace OldProjetoDesktop
             this.txtCPFFuncionario.Multiline = true;
             this.txtCPFFuncionario.Name = "txtCPFFuncionario";
             this.txtCPFFuncionario.Size = new System.Drawing.Size(300, 29);
-            this.txtCPFFuncionario.TabIndex = 26;
+            this.txtCPFFuncionario.TabIndex = 2;
             // 
             // label5
             // 
@@ -91,7 +91,7 @@ namespace OldProjetoDesktop
             this.txtDataFuncionario.Multiline = true;
             this.txtDataFuncionario.Name = "txtDataFuncionario";
             this.txtDataFuncionario.Size = new System.Drawing.Size(147, 29);
-            this.txtDataFuncionario.TabIndex = 24;
+            this.txtDataFuncionario.TabIndex = 0;
             // 
             // label4
             // 
@@ -109,7 +109,7 @@ namespace OldProjetoDesktop
             this.txtNomeFuncionario.Multiline = true;
             this.txtNomeFuncionario.Name = "txtNomeFuncionario";
             this.txtNomeFuncionario.Size = new System.Drawing.Size(776, 29);
-            this.txtNomeFuncionario.TabIndex = 19;
+            this.txtNomeFuncionario.TabIndex = 1;
             // 
             // label1
             // 
@@ -195,7 +195,7 @@ namespace OldProjetoDesktop
             this.txtSenha.Multiline = true;
             this.txtSenha.Name = "txtSenha";
             this.txtSenha.Size = new System.Drawing.Size(270, 29);
-            this.txtSenha.TabIndex = 34;
+            this.txtSenha.TabIndex = 3;
             // 
             // label3
             // 
@@ -213,7 +213,7 @@ namespace OldProjetoDesktop
             this.txtConfirmarSenha.Multiline = true;
             this.txtConfirmarSenha.Name = "txtConfirmarSenha";
             this.txtConfirmarSenha.Size = new System.Drawing.Size(270, 29);
-            this.txtConfirmarSenha.TabIndex = 36;
+            this.txtConfirmarSenha.TabIndex = 4;
             // 
             // label6
             // 
@@ -232,7 +232,7 @@ namespace OldProjetoDesktop
             this.txtIdFuncionario.Multiline = true;
             this.txtIdFuncionario.Name = "txtIdFuncionario";
             this.txtIdFuncionario.Size = new System.Drawing.Size(114, 29);
-            this.txtIdFuncionario.TabIndex = 38;
+            this.txtIdFuncionario.TabIndex = 0;
             // 
             // label7
             // 
@@ -250,9 +250,10 @@ namespace OldProjetoDesktop
             this.btnCancelar.Location = new System.Drawing.Point(659, 392);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(129, 46);
-            this.btnCancelar.TabIndex = 39;
+            this.btnCancelar.TabIndex = 6;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = false;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // frmCadastroFuncionario
             // 

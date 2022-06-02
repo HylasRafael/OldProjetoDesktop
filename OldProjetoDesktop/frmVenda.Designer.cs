@@ -55,7 +55,7 @@ namespace OldProjetoDesktop
             this.txtDataVenda.Multiline = true;
             this.txtDataVenda.Name = "txtDataVenda";
             this.txtDataVenda.Size = new System.Drawing.Size(147, 29);
-            this.txtDataVenda.TabIndex = 27;
+            this.txtDataVenda.TabIndex = 0;
             // 
             // label4
             // 
@@ -73,7 +73,7 @@ namespace OldProjetoDesktop
             this.txtIdVenda.Multiline = true;
             this.txtIdVenda.Name = "txtIdVenda";
             this.txtIdVenda.Size = new System.Drawing.Size(114, 29);
-            this.txtIdVenda.TabIndex = 25;
+            this.txtIdVenda.TabIndex = 0;
             // 
             // label1
             // 
@@ -100,7 +100,7 @@ namespace OldProjetoDesktop
             this.btnRemoverProduto.Location = new System.Drawing.Point(537, 266);
             this.btnRemoverProduto.Name = "btnRemoverProduto";
             this.btnRemoverProduto.Size = new System.Drawing.Size(105, 28);
-            this.btnRemoverProduto.TabIndex = 34;
+            this.btnRemoverProduto.TabIndex = 4;
             this.btnRemoverProduto.Text = "Remover";
             this.btnRemoverProduto.UseVisualStyleBackColor = true;
             // 
@@ -109,7 +109,7 @@ namespace OldProjetoDesktop
             this.btnAdicionarProduto.Location = new System.Drawing.Point(426, 266);
             this.btnAdicionarProduto.Name = "btnAdicionarProduto";
             this.btnAdicionarProduto.Size = new System.Drawing.Size(105, 28);
-            this.btnAdicionarProduto.TabIndex = 35;
+            this.btnAdicionarProduto.TabIndex = 3;
             this.btnAdicionarProduto.Text = "Adicionar";
             this.btnAdicionarProduto.UseVisualStyleBackColor = true;
             // 
@@ -119,7 +119,7 @@ namespace OldProjetoDesktop
             this.txtCPFCliente.Multiline = true;
             this.txtCPFCliente.Name = "txtCPFCliente";
             this.txtCPFCliente.Size = new System.Drawing.Size(254, 29);
-            this.txtCPFCliente.TabIndex = 41;
+            this.txtCPFCliente.TabIndex = 1;
             // 
             // label6
             // 
@@ -137,7 +137,7 @@ namespace OldProjetoDesktop
             this.txtNomeCliente.Multiline = true;
             this.txtNomeCliente.Name = "txtNomeCliente";
             this.txtNomeCliente.Size = new System.Drawing.Size(776, 29);
-            this.txtNomeCliente.TabIndex = 43;
+            this.txtNomeCliente.TabIndex = 2;
             // 
             // label7
             // 
@@ -184,7 +184,7 @@ namespace OldProjetoDesktop
             this.btnCancelarVenda.Location = new System.Drawing.Point(894, 554);
             this.btnCancelarVenda.Name = "btnCancelarVenda";
             this.btnCancelarVenda.Size = new System.Drawing.Size(129, 44);
-            this.btnCancelarVenda.TabIndex = 48;
+            this.btnCancelarVenda.TabIndex = 6;
             this.btnCancelarVenda.Text = "Cancelar";
             this.btnCancelarVenda.UseVisualStyleBackColor = false;
             this.btnCancelarVenda.Click += new System.EventHandler(this.btnCancelarVenda_Click);
@@ -195,7 +195,7 @@ namespace OldProjetoDesktop
             this.btnSalvarVenda.Location = new System.Drawing.Point(759, 554);
             this.btnSalvarVenda.Name = "btnSalvarVenda";
             this.btnSalvarVenda.Size = new System.Drawing.Size(129, 44);
-            this.btnSalvarVenda.TabIndex = 47;
+            this.btnSalvarVenda.TabIndex = 5;
             this.btnSalvarVenda.Text = "Salvar";
             this.btnSalvarVenda.UseVisualStyleBackColor = false;
             // 

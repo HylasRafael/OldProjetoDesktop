@@ -45,14 +45,14 @@ namespace OldProjetoDesktop
             this.label3 = new System.Windows.Forms.Label();
             this.txtDataProduto = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.txtCodigoProduto = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.txtPrecoProduto = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.txtCategoriaProduto = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.btnSalvar = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.cmbCategoria = new System.Windows.Forms.ComboBox();
+            this.txtIDProduto = new System.Windows.Forms.TextBox();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -119,7 +119,7 @@ namespace OldProjetoDesktop
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(9, 121);
+            this.label1.Location = new System.Drawing.Point(9, 144);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(107, 16);
             this.label1.TabIndex = 2;
@@ -127,11 +127,11 @@ namespace OldProjetoDesktop
             // 
             // txtNomeProduto
             // 
-            this.txtNomeProduto.Location = new System.Drawing.Point(12, 137);
+            this.txtNomeProduto.Location = new System.Drawing.Point(12, 160);
             this.txtNomeProduto.Multiline = true;
             this.txtNomeProduto.Name = "txtNomeProduto";
             this.txtNomeProduto.Size = new System.Drawing.Size(574, 29);
-            this.txtNomeProduto.TabIndex = 3;
+            this.txtNomeProduto.TabIndex = 2;
             // 
             // label2
             // 
@@ -145,17 +145,17 @@ namespace OldProjetoDesktop
             // 
             // txtDescricaoProduto
             // 
-            this.txtDescricaoProduto.Location = new System.Drawing.Point(12, 260);
+            this.txtDescricaoProduto.Location = new System.Drawing.Point(12, 228);
             this.txtDescricaoProduto.Multiline = true;
             this.txtDescricaoProduto.Name = "txtDescricaoProduto";
             this.txtDescricaoProduto.Size = new System.Drawing.Size(776, 81);
-            this.txtDescricaoProduto.TabIndex = 6;
+            this.txtDescricaoProduto.TabIndex = 3;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(9, 244);
+            this.label3.Location = new System.Drawing.Point(9, 212);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(159, 16);
             this.label3.TabIndex = 5;
@@ -163,71 +163,55 @@ namespace OldProjetoDesktop
             // 
             // txtDataProduto
             // 
-            this.txtDataProduto.Location = new System.Drawing.Point(641, 137);
+            this.txtDataProduto.Location = new System.Drawing.Point(132, 108);
             this.txtDataProduto.Multiline = true;
             this.txtDataProduto.Name = "txtDataProduto";
             this.txtDataProduto.Size = new System.Drawing.Size(147, 29);
-            this.txtDataProduto.TabIndex = 8;
+            this.txtDataProduto.TabIndex = 0;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(638, 121);
+            this.label4.Location = new System.Drawing.Point(129, 92);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(130, 16);
             this.label4.TabIndex = 7;
             this.label4.Text = "Data do Cadastro";
             // 
-            // txtCodigoProduto
-            // 
-            this.txtCodigoProduto.Location = new System.Drawing.Point(448, 195);
-            this.txtCodigoProduto.Multiline = true;
-            this.txtCodigoProduto.Name = "txtCodigoProduto";
-            this.txtCodigoProduto.Size = new System.Drawing.Size(300, 29);
-            this.txtCodigoProduto.TabIndex = 10;
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(445, 179);
+            this.label5.Location = new System.Drawing.Point(9, 92);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(138, 16);
+            this.label5.Size = new System.Drawing.Size(23, 16);
             this.label5.TabIndex = 9;
-            this.label5.Text = "Código do Produto";
+            this.label5.Text = "ID";
             // 
             // txtPrecoProduto
             // 
-            this.txtPrecoProduto.Location = new System.Drawing.Point(12, 370);
+            this.txtPrecoProduto.Location = new System.Drawing.Point(12, 356);
             this.txtPrecoProduto.Multiline = true;
             this.txtPrecoProduto.Name = "txtPrecoProduto";
             this.txtPrecoProduto.Size = new System.Drawing.Size(251, 29);
-            this.txtPrecoProduto.TabIndex = 12;
+            this.txtPrecoProduto.TabIndex = 4;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(9, 354);
+            this.label6.Location = new System.Drawing.Point(9, 340);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(72, 16);
             this.label6.TabIndex = 11;
             this.label6.Text = "Preço R$";
             // 
-            // txtCategoriaProduto
-            // 
-            this.txtCategoriaProduto.Location = new System.Drawing.Point(12, 195);
-            this.txtCategoriaProduto.Multiline = true;
-            this.txtCategoriaProduto.Name = "txtCategoriaProduto";
-            this.txtCategoriaProduto.Size = new System.Drawing.Size(387, 29);
-            this.txtCategoriaProduto.TabIndex = 15;
-            // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(9, 179);
+            this.label7.Location = new System.Drawing.Point(355, 89);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(76, 16);
             this.label7.TabIndex = 14;
@@ -239,7 +223,7 @@ namespace OldProjetoDesktop
             this.btnSalvar.Location = new System.Drawing.Point(524, 392);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(129, 46);
-            this.btnSalvar.TabIndex = 34;
+            this.btnSalvar.TabIndex = 5;
             this.btnSalvar.Text = "Salvar";
             this.btnSalvar.UseVisualStyleBackColor = false;
             this.btnSalvar.Click += new System.EventHandler(this.btnAtualizar_Click);
@@ -250,10 +234,35 @@ namespace OldProjetoDesktop
             this.button1.Location = new System.Drawing.Point(659, 392);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(129, 46);
-            this.button1.TabIndex = 35;
+            this.button1.TabIndex = 6;
             this.button1.Text = "Cancelar";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // cmbCategoria
+            // 
+            this.cmbCategoria.FormattingEnabled = true;
+            this.cmbCategoria.ItemHeight = 13;
+            this.cmbCategoria.Items.AddRange(new object[] {
+            "a",
+            "b",
+            "c",
+            "d",
+            "e",
+            "f"});
+            this.cmbCategoria.Location = new System.Drawing.Point(358, 108);
+            this.cmbCategoria.Name = "cmbCategoria";
+            this.cmbCategoria.Size = new System.Drawing.Size(228, 21);
+            this.cmbCategoria.TabIndex = 1;
+            // 
+            // txtIDProduto
+            // 
+            this.txtIDProduto.Enabled = false;
+            this.txtIDProduto.Location = new System.Drawing.Point(12, 108);
+            this.txtIDProduto.Multiline = true;
+            this.txtIDProduto.Name = "txtIDProduto";
+            this.txtIDProduto.Size = new System.Drawing.Size(114, 29);
+            this.txtIDProduto.TabIndex = 0;
             // 
             // frmCadastroProduto
             // 
@@ -261,13 +270,13 @@ namespace OldProjetoDesktop
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(229)))), ((int)(((byte)(219)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.txtIDProduto);
+            this.Controls.Add(this.cmbCategoria);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnSalvar);
-            this.Controls.Add(this.txtCategoriaProduto);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.txtPrecoProduto);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.txtCodigoProduto);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.txtDataProduto);
             this.Controls.Add(this.label4);
@@ -304,14 +313,14 @@ namespace OldProjetoDesktop
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtDataProduto;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox txtCodigoProduto;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtPrecoProduto;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox txtCategoriaProduto;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.ToolStripMenuItem mbtCadastroDeFuncionario;
         private System.Windows.Forms.Button btnSalvar;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ComboBox cmbCategoria;
+        private System.Windows.Forms.TextBox txtIDProduto;
     }
 }
