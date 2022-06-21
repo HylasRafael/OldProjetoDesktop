@@ -48,11 +48,11 @@ namespace OldProjetoDesktop
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.txtSenha = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.txtConfirmarSenha = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
             this.txtIdFuncionario = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.btnCancelar = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txtRE = new System.Windows.Forms.TextBox();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -65,6 +65,7 @@ namespace OldProjetoDesktop
             this.btnSalvar.TabIndex = 5;
             this.btnSalvar.Text = "Salvar";
             this.btnSalvar.UseVisualStyleBackColor = false;
+            this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
             // 
             // txtCPFFuncionario
             // 
@@ -92,6 +93,7 @@ namespace OldProjetoDesktop
             this.txtDataFuncionario.Name = "txtDataFuncionario";
             this.txtDataFuncionario.Size = new System.Drawing.Size(147, 29);
             this.txtDataFuncionario.TabIndex = 0;
+            this.txtDataFuncionario.TextChanged += new System.EventHandler(this.txtDataFuncionario_TextChanged);
             // 
             // label4
             // 
@@ -207,24 +209,6 @@ namespace OldProjetoDesktop
             this.label3.TabIndex = 33;
             this.label3.Text = "Senha";
             // 
-            // txtConfirmarSenha
-            // 
-            this.txtConfirmarSenha.Location = new System.Drawing.Point(12, 360);
-            this.txtConfirmarSenha.Multiline = true;
-            this.txtConfirmarSenha.Name = "txtConfirmarSenha";
-            this.txtConfirmarSenha.Size = new System.Drawing.Size(270, 29);
-            this.txtConfirmarSenha.TabIndex = 4;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(9, 344);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(122, 16);
-            this.label6.TabIndex = 35;
-            this.label6.Text = "Confirmar Senha";
-            // 
             // txtIdFuncionario
             // 
             this.txtIdFuncionario.Enabled = false;
@@ -255,17 +239,35 @@ namespace OldProjetoDesktop
             this.btnCancelar.UseVisualStyleBackColor = false;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(285, 120);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(29, 16);
+            this.label6.TabIndex = 39;
+            this.label6.Text = "RE";
+            // 
+            // txtRE
+            // 
+            this.txtRE.Location = new System.Drawing.Point(288, 136);
+            this.txtRE.Multiline = true;
+            this.txtRE.Name = "txtRE";
+            this.txtRE.Size = new System.Drawing.Size(141, 29);
+            this.txtRE.TabIndex = 40;
+            // 
             // frmCadastroFuncionario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(229)))), ((int)(((byte)(219)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.txtRE);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.txtIdFuncionario);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.txtConfirmarSenha);
-            this.Controls.Add(this.label6);
             this.Controls.Add(this.txtSenha);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.btnSalvar);
@@ -307,11 +309,11 @@ namespace OldProjetoDesktop
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.TextBox txtSenha;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txtConfirmarSenha;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.ToolStripMenuItem mbtCadastroDeFuncionario;
         private System.Windows.Forms.TextBox txtIdFuncionario;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button btnCancelar;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox txtRE;
     }
 }

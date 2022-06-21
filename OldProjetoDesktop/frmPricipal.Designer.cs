@@ -43,10 +43,10 @@ namespace OldProjetoDesktop
             this.mbtPesquisaCliente = new System.Windows.Forms.ToolStripMenuItem();
             this.mbtPesquisaProduto = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
             this.mbtVendas = new System.Windows.Forms.ToolStripMenuItem();
             this.mbtVender = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.frmPrincipal.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -133,6 +133,7 @@ namespace OldProjetoDesktop
             this.mbtPesquisar.Name = "mbtPesquisar";
             this.mbtPesquisar.Size = new System.Drawing.Size(69, 23);
             this.mbtPesquisar.Text = "Pesquisar";
+            this.mbtPesquisar.Click += new System.EventHandler(this.mbtPesquisar_Click);
             // 
             // mbtPesquisaCliente
             // 
@@ -152,10 +153,10 @@ namespace OldProjetoDesktop
             this.toolStripSeparator3.Name = "toolStripSeparator3";
             this.toolStripSeparator3.Size = new System.Drawing.Size(177, 6);
             // 
-            // toolStripMenuItem1
+            // toolStripSeparator4
             // 
-            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(12, 23);
+            this.toolStripSeparator4.Name = "toolStripSeparator4";
+            this.toolStripSeparator4.Size = new System.Drawing.Size(6, 23);
             // 
             // mbtVendas
             // 
@@ -164,17 +165,19 @@ namespace OldProjetoDesktop
             this.mbtVendas.Name = "mbtVendas";
             this.mbtVendas.Size = new System.Drawing.Size(56, 23);
             this.mbtVendas.Text = "Vendas";
+            this.mbtVendas.Click += new System.EventHandler(this.mbtVendas_Click);
             // 
             // mbtVender
             // 
             this.mbtVender.Name = "mbtVender";
             this.mbtVender.Size = new System.Drawing.Size(180, 22);
             this.mbtVender.Text = "Vender";
+            this.mbtVender.Click += new System.EventHandler(this.mbtVender_Click);
             // 
-            // toolStripSeparator4
+            // toolStripMenuItem1
             // 
-            this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size(6, 23);
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(12, 23);
             // 
             // frmPricipal
             // 

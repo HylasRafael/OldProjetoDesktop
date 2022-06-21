@@ -62,5 +62,21 @@ namespace OldProjetoDesktop
             frmCadastroProduto formulario = new frmCadastroProduto();
             formulario.ShowDialog();
         }
+
+        private void mbtPesquisar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void mbtVendas_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void mbtVender_Click(object sender, EventArgs e)
+        {
+            frmVenda formulario = new frmVenda();
+            formulario.ShowDialog();
+        }
     }
 }
