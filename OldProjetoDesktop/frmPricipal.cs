@@ -42,7 +42,9 @@ namespace OldProjetoDesktop
 
         private void bmtSair_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            frmLogin formulario = new frmLogin();
+            formulario.ShowDialog();
+           
         }
 
         private void mbtCadastroDeFuncionario_Click(object sender, EventArgs e)

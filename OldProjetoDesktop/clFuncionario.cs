@@ -27,7 +27,7 @@ namespace OldProjetoDesktop
             {
                 BD._sql = String.Format(new CultureInfo("en-US"), "INSERT INTO FUNCIONARIO ( NOME, CPF, DATACADASTRO, SENHA, RE )" +
                                                         " values ( '{0}','{1}','{2}','{3}','{4}' )",
-                                                        dataCadastroFuncionario.ToShortTimeString(), nome, CPF, senha, re) + "; SELECT SCOPE_IDENTITY(); ";
+                                                        nome, CPF, dataCadastroFuncionario.ToShortDateString(), senha, re) + "; SELECT SCOPE_IDENTITY(); ";
                 BD.ExecutaComando(false, out IdFuncionario);
 
                 if (IdFuncionario > 0)
