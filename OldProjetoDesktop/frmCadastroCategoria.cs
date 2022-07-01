@@ -31,5 +31,14 @@ namespace OldProjetoDesktop
         {
 
         }
+
+        private void btnSalvarVenda_Click(object sender, EventArgs e)
+        {
+            clCategoria categoria = new clCategoria();
+
+            categoria.nome = txtNomeCategoria.Text;
+
+            txtIDCategoria.Text = Convert.ToString(categoria.Salvar()); ;
+        }
     }
 }

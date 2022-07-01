@@ -106,6 +106,7 @@ namespace OldProjetoDesktop
             this.btnSalvarVenda.TabIndex = 2;
             this.btnSalvarVenda.Text = "Salvar";
             this.btnSalvarVenda.UseVisualStyleBackColor = false;
+            this.btnSalvarVenda.Click += new System.EventHandler(this.btnSalvarVenda_Click);
             // 
             // frmCadastroCategoria
             // 
