@@ -163,11 +163,13 @@ namespace OldProjetoDesktop
             // 
             // txtDataProduto
             // 
+            this.txtDataProduto.Enabled = false;
             this.txtDataProduto.Location = new System.Drawing.Point(132, 108);
             this.txtDataProduto.Multiline = true;
             this.txtDataProduto.Name = "txtDataProduto";
             this.txtDataProduto.Size = new System.Drawing.Size(147, 29);
             this.txtDataProduto.TabIndex = 0;
+            this.txtDataProduto.TextChanged += new System.EventHandler(this.txtDataProduto_TextChanged);
             // 
             // label4
             // 
@@ -243,13 +245,6 @@ namespace OldProjetoDesktop
             // 
             this.cmbCategoria.FormattingEnabled = true;
             this.cmbCategoria.ItemHeight = 13;
-            this.cmbCategoria.Items.AddRange(new object[] {
-            "a",
-            "b",
-            "c",
-            "d",
-            "e",
-            "f"});
             this.cmbCategoria.Location = new System.Drawing.Point(358, 108);
             this.cmbCategoria.Name = "cmbCategoria";
             this.cmbCategoria.Size = new System.Drawing.Size(228, 21);
@@ -291,6 +286,7 @@ namespace OldProjetoDesktop
             this.Name = "frmCadastroProduto";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cadastro de Produto";
+            this.Load += new System.EventHandler(this.frmCadastroProduto_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);

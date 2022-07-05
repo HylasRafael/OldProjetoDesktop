@@ -75,6 +75,7 @@ namespace OldProjetoDesktop
             this.dgvCliente.Name = "dgvCliente";
             this.dgvCliente.Size = new System.Drawing.Size(776, 260);
             this.dgvCliente.TabIndex = 25;
+            this.dgvCliente.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCliente_CellContentClick);
             // 
             // btnCancelar
             // 

@@ -26,12 +26,12 @@ namespace OldProjetoDesktop
 
                 if (IDCategoria > 0) 
                 {
-                    MessageBox.Show("Cliente cadastrado com sucesso!", "Cadastro com sucesso",
+                    MessageBox.Show("Categoria cadastrada com sucesso!", "Cadastro com sucesso",
                                      MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 else 
                 {
-                    MessageBox.Show("Erro ao cadastrar Cliente", "Erro", MessageBoxButtons.OK,
+                    MessageBox.Show("Erro ao cadastrar Categoria", "Erro", MessageBoxButtons.OK,
                                      MessageBoxIcon.Error);
                 }
             }

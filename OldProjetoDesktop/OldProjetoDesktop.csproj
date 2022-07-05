@@ -49,6 +49,7 @@
     <Compile Include="clCategoria.cs" />
     <Compile Include="clCliente.cs" />
     <Compile Include="clFuncionario.cs" />
+    <Compile Include="clProduto.cs" />
     <Compile Include="clUsuario.cs" />
     <Compile Include="conectaBD.cs" />
     <Compile Include="frmCadastroCategoria.cs">

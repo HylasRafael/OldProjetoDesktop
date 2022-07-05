@@ -76,5 +76,10 @@ namespace OldProjetoDesktop
                 MessageBox.Show("ERRO.: " + ex.Message);
             }
         }
+
+        private void dgvCliente_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
