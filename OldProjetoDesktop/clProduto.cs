@@ -56,7 +56,7 @@ namespace OldProjetoDesktop
         {
             try
             {
-                BD._sql = "SELECT * FROM produto " +
+                BD._sql = "SELECT * FROM produtos " +
                          " WHERE NOME LIKE '%" + nome + "%' ";
 
                 return BD.ExecutaSelect();

@@ -61,12 +61,7 @@ namespace OldProjetoDesktop
                 }
 
                 dgvCliente.Columns[0].Visible = false;
-                dgvCliente.Columns[3].Visible = false;
-                dgvCliente.Columns[4].Visible = false;
-                dgvCliente.Columns[5].Visible = false;
-                dgvCliente.Columns[6].Visible = false;
-                dgvCliente.Columns[7].Visible = false;
-                dgvCliente.Columns[8].Visible = false;
+                dgvCliente.Columns[1].Visible = false;                
 
                 dgvCliente.Columns[1].Width = 200;
 
@@ -78,6 +73,11 @@ namespace OldProjetoDesktop
         }
 
         private void dgvCliente_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void btnAtualizar_Click(object sender, EventArgs e)
         {
 
         }

@@ -65,7 +65,28 @@ namespace OldProjetoDesktop
 
         public void Excluir()
         {
+            try
+            {
+                int exOK = 0;
 
+                BD._sql = "DELETE FROM CLIENTE = " + IDCliente;
+
+                exOK = BD.ExecutaComando(false);
+
+                if (exOK == 1)
+                {
+                    MessageBox.Show("Cliente Deletado!", "Salvo com Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    MessageBox.Show("Erro ao Deletar", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error.: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        
         }
 
         public void Atualizar()

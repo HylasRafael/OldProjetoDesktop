@@ -147,6 +147,7 @@ namespace OldProjetoDesktop
             this.mbtPesquisaProduto.Name = "mbtPesquisaProduto";
             this.mbtPesquisaProduto.Size = new System.Drawing.Size(180, 22);
             this.mbtPesquisaProduto.Text = "Produto";
+            this.mbtPesquisaProduto.Click += new System.EventHandler(this.mbtPesquisaProduto_Click);
             // 
             // toolStripSeparator3
             // 
@@ -170,7 +171,7 @@ namespace OldProjetoDesktop
             // mbtVender
             // 
             this.mbtVender.Name = "mbtVender";
-            this.mbtVender.Size = new System.Drawing.Size(180, 22);
+            this.mbtVender.Size = new System.Drawing.Size(110, 22);
             this.mbtVender.Text = "Vender";
             this.mbtVender.Click += new System.EventHandler(this.mbtVender_Click);
             // 

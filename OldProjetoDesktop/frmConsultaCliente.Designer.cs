@@ -42,9 +42,9 @@ namespace OldProjetoDesktop
             // 
             // txtPesquisaCliente
             // 
-            this.txtPesquisaCliente.Location = new System.Drawing.Point(12, 118);
+            this.txtPesquisaCliente.Location = new System.Drawing.Point(53, 118);
             this.txtPesquisaCliente.Name = "txtPesquisaCliente";
-            this.txtPesquisaCliente.Size = new System.Drawing.Size(776, 20);
+            this.txtPesquisaCliente.Size = new System.Drawing.Size(586, 20);
             this.txtPesquisaCliente.TabIndex = 1;
             this.txtPesquisaCliente.TextChanged += new System.EventHandler(this.txtPesquisaCliente_TextChanged);
             // 
@@ -52,7 +52,7 @@ namespace OldProjetoDesktop
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(230, 33);
+            this.label1.Location = new System.Drawing.Point(499, 39);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(289, 25);
             this.label1.TabIndex = 21;
@@ -62,7 +62,7 @@ namespace OldProjetoDesktop
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(9, 99);
+            this.label4.Location = new System.Drawing.Point(50, 99);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(53, 16);
             this.label4.TabIndex = 24;
@@ -71,9 +71,9 @@ namespace OldProjetoDesktop
             // dgvCliente
             // 
             this.dgvCliente.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvCliente.Location = new System.Drawing.Point(12, 144);
+            this.dgvCliente.Location = new System.Drawing.Point(53, 144);
             this.dgvCliente.Name = "dgvCliente";
-            this.dgvCliente.Size = new System.Drawing.Size(776, 260);
+            this.dgvCliente.Size = new System.Drawing.Size(939, 335);
             this.dgvCliente.TabIndex = 25;
             this.dgvCliente.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCliente_CellContentClick);
             // 
@@ -97,6 +97,7 @@ namespace OldProjetoDesktop
             this.btnAtualizar.TabIndex = 2;
             this.btnAtualizar.Text = "Atualizar";
             this.btnAtualizar.UseVisualStyleBackColor = false;
+            this.btnAtualizar.Click += new System.EventHandler(this.btnAtualizar_Click);
             // 
             // btnExcluir
             // 
@@ -114,7 +115,7 @@ namespace OldProjetoDesktop
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(229)))), ((int)(((byte)(219)))));
-            this.ClientSize = new System.Drawing.Size(800, 574);
+            this.ClientSize = new System.Drawing.Size(1047, 574);
             this.Controls.Add(this.btnExcluir);
             this.Controls.Add(this.btnAtualizar);
             this.Controls.Add(this.btnCancelar);

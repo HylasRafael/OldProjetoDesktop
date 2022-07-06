@@ -75,9 +75,9 @@ namespace OldProjetoDesktop
             // dgvProduto
             // 
             this.dgvProduto.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvProduto.Location = new System.Drawing.Point(14, 129);
+            this.dgvProduto.Location = new System.Drawing.Point(68, 166);
             this.dgvProduto.Name = "dgvProduto";
-            this.dgvProduto.Size = new System.Drawing.Size(776, 260);
+            this.dgvProduto.Size = new System.Drawing.Size(662, 260);
             this.dgvProduto.TabIndex = 32;
             this.dgvProduto.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCliente_CellContentClick);
             // 
@@ -126,6 +126,7 @@ namespace OldProjetoDesktop
             this.Controls.Add(this.txtPesquisaProduto);
             this.Name = "frmConsultaProduto";
             this.Text = "Consulta de Produto";
+            this.Load += new System.EventHandler(this.frmConsultaProduto_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvProduto)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -57,6 +57,7 @@ namespace OldProjetoDesktop
             this.txtSenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.txtSenha.Location = new System.Drawing.Point(100, 267);
             this.txtSenha.Name = "txtSenha";
+            this.txtSenha.PasswordChar = '*';
             this.txtSenha.Size = new System.Drawing.Size(189, 32);
             this.txtSenha.TabIndex = 2;
             this.txtSenha.TextChanged += new System.EventHandler(this.txtSenha_TextChanged);
