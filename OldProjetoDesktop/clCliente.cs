@@ -69,7 +69,7 @@ namespace OldProjetoDesktop
             {
                 int exOK = 0;
 
-                BD._sql = "DELETE FROM CLIENTE = " + IDCliente;
+                BD._sql = "DELETE FROM CLIENTE WHERE IDCLIENTE = " + IDCliente;
 
                 exOK = BD.ExecutaComando(false);
 

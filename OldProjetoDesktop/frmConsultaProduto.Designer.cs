@@ -125,6 +125,7 @@ namespace OldProjetoDesktop
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtPesquisaProduto);
             this.Name = "frmConsultaProduto";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Consulta de Produto";
             this.Load += new System.EventHandler(this.frmConsultaProduto_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvProduto)).EndInit();
