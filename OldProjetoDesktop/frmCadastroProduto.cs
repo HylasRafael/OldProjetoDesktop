@@ -66,5 +66,11 @@ namespace OldProjetoDesktop
             cmbCategoria.DisplayMember = "nome";
             cmbCategoria.SelectedIndex = -1;
         }
+
+        private void mbtCadastroDeProduto_Click(object sender, EventArgs e)
+        {
+            frmCadastroCategoria formulario = new frmCadastroCategoria();
+            formulario.ShowDialog();
+        }
     }
 }

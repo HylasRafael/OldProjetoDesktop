@@ -37,13 +37,6 @@ namespace OldProjetoDesktop
             this.label4 = new System.Windows.Forms.Label();
             this.txtNomeFuncionario = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.bmtSair = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.mbtCadastroDeCliente = new System.Windows.Forms.ToolStripMenuItem();
-            this.mbtCadastroDeCategoria = new System.Windows.Forms.ToolStripMenuItem();
-            this.mbtCadastroDeProduto = new System.Windows.Forms.ToolStripMenuItem();
-            this.cadastroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.mbtCadastroDeFuncionario = new System.Windows.Forms.ToolStripMenuItem();
             this.label2 = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.txtSenha = new System.Windows.Forms.TextBox();
@@ -53,7 +46,6 @@ namespace OldProjetoDesktop
             this.btnCancelar = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.txtRE = new System.Windows.Forms.TextBox();
-            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnSalvar
@@ -70,9 +62,8 @@ namespace OldProjetoDesktop
             // txtCPFFuncionario
             // 
             this.txtCPFFuncionario.Location = new System.Drawing.Point(12, 246);
-            this.txtCPFFuncionario.Multiline = true;
             this.txtCPFFuncionario.Name = "txtCPFFuncionario";
-            this.txtCPFFuncionario.Size = new System.Drawing.Size(300, 29);
+            this.txtCPFFuncionario.Size = new System.Drawing.Size(300, 20);
             this.txtCPFFuncionario.TabIndex = 2;
             // 
             // label5
@@ -89,9 +80,8 @@ namespace OldProjetoDesktop
             // 
             this.txtDataFuncionario.Enabled = false;
             this.txtDataFuncionario.Location = new System.Drawing.Point(135, 136);
-            this.txtDataFuncionario.Multiline = true;
             this.txtDataFuncionario.Name = "txtDataFuncionario";
-            this.txtDataFuncionario.Size = new System.Drawing.Size(147, 29);
+            this.txtDataFuncionario.Size = new System.Drawing.Size(147, 20);
             this.txtDataFuncionario.TabIndex = 0;
             this.txtDataFuncionario.TextChanged += new System.EventHandler(this.txtDataFuncionario_TextChanged);
             // 
@@ -108,9 +98,8 @@ namespace OldProjetoDesktop
             // txtNomeFuncionario
             // 
             this.txtNomeFuncionario.Location = new System.Drawing.Point(12, 195);
-            this.txtNomeFuncionario.Multiline = true;
             this.txtNomeFuncionario.Name = "txtNomeFuncionario";
-            this.txtNomeFuncionario.Size = new System.Drawing.Size(776, 29);
+            this.txtNomeFuncionario.Size = new System.Drawing.Size(776, 20);
             this.txtNomeFuncionario.TabIndex = 1;
             // 
             // label1
@@ -122,54 +111,6 @@ namespace OldProjetoDesktop
             this.label1.Size = new System.Drawing.Size(162, 16);
             this.label1.TabIndex = 18;
             this.label1.Text = "Nome do Colaborador";
-            // 
-            // bmtSair
-            // 
-            this.bmtSair.Name = "bmtSair";
-            this.bmtSair.Size = new System.Drawing.Size(203, 22);
-            this.bmtSair.Text = "Sair";
-            // 
-            // toolStripSeparator1
-            // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(200, 6);
-            // 
-            // mbtCadastroDeCliente
-            // 
-            this.mbtCadastroDeCliente.Name = "mbtCadastroDeCliente";
-            this.mbtCadastroDeCliente.Size = new System.Drawing.Size(203, 22);
-            this.mbtCadastroDeCliente.Text = "Cadastro de Produto";
-            // 
-            // mbtCadastroDeCategoria
-            // 
-            this.mbtCadastroDeCategoria.Name = "mbtCadastroDeCategoria";
-            this.mbtCadastroDeCategoria.Size = new System.Drawing.Size(203, 22);
-            this.mbtCadastroDeCategoria.Text = "Cadastro de Cliente";
-            // 
-            // mbtCadastroDeProduto
-            // 
-            this.mbtCadastroDeProduto.Name = "mbtCadastroDeProduto";
-            this.mbtCadastroDeProduto.Size = new System.Drawing.Size(203, 22);
-            this.mbtCadastroDeProduto.Text = "Cadastro de Categoria";
-            // 
-            // cadastroToolStripMenuItem
-            // 
-            this.cadastroToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.mbtCadastroDeProduto,
-            this.mbtCadastroDeCategoria,
-            this.mbtCadastroDeFuncionario,
-            this.mbtCadastroDeCliente,
-            this.toolStripSeparator1,
-            this.bmtSair});
-            this.cadastroToolStripMenuItem.Name = "cadastroToolStripMenuItem";
-            this.cadastroToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
-            this.cadastroToolStripMenuItem.Text = "Cadastro";
-            // 
-            // mbtCadastroDeFuncionario
-            // 
-            this.mbtCadastroDeFuncionario.Name = "mbtCadastroDeFuncionario";
-            this.mbtCadastroDeFuncionario.Size = new System.Drawing.Size(203, 22);
-            this.mbtCadastroDeFuncionario.Text = "Cadastro de Funcionario";
             // 
             // label2
             // 
@@ -183,8 +124,6 @@ namespace OldProjetoDesktop
             // 
             // menuStrip1
             // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.cadastroToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(800, 24);
@@ -194,9 +133,8 @@ namespace OldProjetoDesktop
             // txtSenha
             // 
             this.txtSenha.Location = new System.Drawing.Point(12, 306);
-            this.txtSenha.Multiline = true;
             this.txtSenha.Name = "txtSenha";
-            this.txtSenha.Size = new System.Drawing.Size(270, 29);
+            this.txtSenha.Size = new System.Drawing.Size(270, 20);
             this.txtSenha.TabIndex = 3;
             // 
             // label3
@@ -213,9 +151,8 @@ namespace OldProjetoDesktop
             // 
             this.txtIdFuncionario.Enabled = false;
             this.txtIdFuncionario.Location = new System.Drawing.Point(12, 136);
-            this.txtIdFuncionario.Multiline = true;
             this.txtIdFuncionario.Name = "txtIdFuncionario";
-            this.txtIdFuncionario.Size = new System.Drawing.Size(114, 29);
+            this.txtIdFuncionario.Size = new System.Drawing.Size(114, 20);
             this.txtIdFuncionario.TabIndex = 0;
             // 
             // label7
@@ -252,9 +189,8 @@ namespace OldProjetoDesktop
             // txtRE
             // 
             this.txtRE.Location = new System.Drawing.Point(288, 136);
-            this.txtRE.Multiline = true;
             this.txtRE.Name = "txtRE";
-            this.txtRE.Size = new System.Drawing.Size(141, 29);
+            this.txtRE.Size = new System.Drawing.Size(141, 20);
             this.txtRE.TabIndex = 40;
             // 
             // frmCadastroFuncionario
@@ -284,8 +220,6 @@ namespace OldProjetoDesktop
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cadastro de Funcionario";
             this.Load += new System.EventHandler(this.frmCadastroFuncionario_Load);
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -299,17 +233,10 @@ namespace OldProjetoDesktop
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtNomeFuncionario;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ToolStripMenuItem bmtSair;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
-        private System.Windows.Forms.ToolStripMenuItem mbtCadastroDeCliente;
-        private System.Windows.Forms.ToolStripMenuItem mbtCadastroDeCategoria;
-        private System.Windows.Forms.ToolStripMenuItem mbtCadastroDeProduto;
-        private System.Windows.Forms.ToolStripMenuItem cadastroToolStripMenuItem;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.TextBox txtSenha;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ToolStripMenuItem mbtCadastroDeFuncionario;
         private System.Windows.Forms.TextBox txtIdFuncionario;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button btnCancelar;

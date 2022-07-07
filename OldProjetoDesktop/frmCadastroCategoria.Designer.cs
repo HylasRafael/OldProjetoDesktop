@@ -53,9 +53,8 @@ namespace OldProjetoDesktop
             // 
             this.txtIDCategoria.Enabled = false;
             this.txtIDCategoria.Location = new System.Drawing.Point(45, 145);
-            this.txtIDCategoria.Multiline = true;
             this.txtIDCategoria.Name = "txtIDCategoria";
-            this.txtIDCategoria.Size = new System.Drawing.Size(114, 29);
+            this.txtIDCategoria.Size = new System.Drawing.Size(114, 20);
             this.txtIDCategoria.TabIndex = 0;
             // 
             // label2
@@ -71,9 +70,8 @@ namespace OldProjetoDesktop
             // txtNomeCategoria
             // 
             this.txtNomeCategoria.Location = new System.Drawing.Point(45, 207);
-            this.txtNomeCategoria.Multiline = true;
             this.txtNomeCategoria.Name = "txtNomeCategoria";
-            this.txtNomeCategoria.Size = new System.Drawing.Size(240, 29);
+            this.txtNomeCategoria.Size = new System.Drawing.Size(240, 20);
             this.txtNomeCategoria.TabIndex = 1;
             // 
             // label7

@@ -33,9 +33,6 @@ namespace OldProjetoDesktop
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.cadastroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mbtCadastroDeProduto = new System.Windows.Forms.ToolStripMenuItem();
-            this.mbtCadastroDeCategoria = new System.Windows.Forms.ToolStripMenuItem();
-            this.mbtCadastroDeFuncionario = new System.Windows.Forms.ToolStripMenuItem();
-            this.mbtCadastroDeCliente = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.bmtSair = new System.Windows.Forms.ToolStripMenuItem();
             this.label1 = new System.Windows.Forms.Label();
@@ -70,9 +67,6 @@ namespace OldProjetoDesktop
             // 
             this.cadastroToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mbtCadastroDeProduto,
-            this.mbtCadastroDeCategoria,
-            this.mbtCadastroDeFuncionario,
-            this.mbtCadastroDeCliente,
             this.toolStripSeparator1,
             this.bmtSair});
             this.cadastroToolStripMenuItem.Name = "cadastroToolStripMenuItem";
@@ -82,37 +76,19 @@ namespace OldProjetoDesktop
             // mbtCadastroDeProduto
             // 
             this.mbtCadastroDeProduto.Name = "mbtCadastroDeProduto";
-            this.mbtCadastroDeProduto.Size = new System.Drawing.Size(203, 22);
+            this.mbtCadastroDeProduto.Size = new System.Drawing.Size(191, 22);
             this.mbtCadastroDeProduto.Text = "Cadastro de Categoria";
-            // 
-            // mbtCadastroDeCategoria
-            // 
-            this.mbtCadastroDeCategoria.Name = "mbtCadastroDeCategoria";
-            this.mbtCadastroDeCategoria.Size = new System.Drawing.Size(203, 22);
-            this.mbtCadastroDeCategoria.Text = "Cadastro de Cliente";
-            this.mbtCadastroDeCategoria.Click += new System.EventHandler(this.cadastroDeCategoriaToolStripMenuItem_Click);
-            // 
-            // mbtCadastroDeFuncionario
-            // 
-            this.mbtCadastroDeFuncionario.Name = "mbtCadastroDeFuncionario";
-            this.mbtCadastroDeFuncionario.Size = new System.Drawing.Size(203, 22);
-            this.mbtCadastroDeFuncionario.Text = "Cadastro de Funcionario";
-            // 
-            // mbtCadastroDeCliente
-            // 
-            this.mbtCadastroDeCliente.Name = "mbtCadastroDeCliente";
-            this.mbtCadastroDeCliente.Size = new System.Drawing.Size(203, 22);
-            this.mbtCadastroDeCliente.Text = "Cadastro de Produto";
+            this.mbtCadastroDeProduto.Click += new System.EventHandler(this.mbtCadastroDeProduto_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(200, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(188, 6);
             // 
             // bmtSair
             // 
             this.bmtSair.Name = "bmtSair";
-            this.bmtSair.Size = new System.Drawing.Size(203, 22);
+            this.bmtSair.Size = new System.Drawing.Size(191, 22);
             this.bmtSair.Text = "Sair";
             // 
             // label1
@@ -128,9 +104,8 @@ namespace OldProjetoDesktop
             // txtNomeProduto
             // 
             this.txtNomeProduto.Location = new System.Drawing.Point(12, 160);
-            this.txtNomeProduto.Multiline = true;
             this.txtNomeProduto.Name = "txtNomeProduto";
-            this.txtNomeProduto.Size = new System.Drawing.Size(574, 29);
+            this.txtNomeProduto.Size = new System.Drawing.Size(574, 20);
             this.txtNomeProduto.TabIndex = 2;
             // 
             // label2
@@ -165,9 +140,8 @@ namespace OldProjetoDesktop
             // 
             this.txtDataProduto.Enabled = false;
             this.txtDataProduto.Location = new System.Drawing.Point(132, 108);
-            this.txtDataProduto.Multiline = true;
             this.txtDataProduto.Name = "txtDataProduto";
-            this.txtDataProduto.Size = new System.Drawing.Size(147, 29);
+            this.txtDataProduto.Size = new System.Drawing.Size(147, 20);
             this.txtDataProduto.TabIndex = 0;
             this.txtDataProduto.TextChanged += new System.EventHandler(this.txtDataProduto_TextChanged);
             // 
@@ -194,9 +168,8 @@ namespace OldProjetoDesktop
             // txtPrecoProduto
             // 
             this.txtPrecoProduto.Location = new System.Drawing.Point(12, 356);
-            this.txtPrecoProduto.Multiline = true;
             this.txtPrecoProduto.Name = "txtPrecoProduto";
-            this.txtPrecoProduto.Size = new System.Drawing.Size(251, 29);
+            this.txtPrecoProduto.Size = new System.Drawing.Size(251, 20);
             this.txtPrecoProduto.TabIndex = 4;
             // 
             // label6
@@ -254,9 +227,8 @@ namespace OldProjetoDesktop
             // 
             this.txtIDProduto.Enabled = false;
             this.txtIDProduto.Location = new System.Drawing.Point(12, 108);
-            this.txtIDProduto.Multiline = true;
             this.txtIDProduto.Name = "txtIDProduto";
-            this.txtIDProduto.Size = new System.Drawing.Size(114, 29);
+            this.txtIDProduto.Size = new System.Drawing.Size(114, 20);
             this.txtIDProduto.TabIndex = 0;
             // 
             // frmCadastroProduto
@@ -298,8 +270,6 @@ namespace OldProjetoDesktop
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem cadastroToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem mbtCadastroDeProduto;
-        private System.Windows.Forms.ToolStripMenuItem mbtCadastroDeCategoria;
-        private System.Windows.Forms.ToolStripMenuItem mbtCadastroDeCliente;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripMenuItem bmtSair;
         private System.Windows.Forms.Label label1;
@@ -313,7 +283,6 @@ namespace OldProjetoDesktop
         private System.Windows.Forms.TextBox txtPrecoProduto;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.ToolStripMenuItem mbtCadastroDeFuncionario;
         private System.Windows.Forms.Button btnSalvar;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.ComboBox cmbCategoria;

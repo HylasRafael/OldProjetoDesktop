@@ -52,9 +52,8 @@ namespace OldProjetoDesktop
             // txtDataVenda
             // 
             this.txtDataVenda.Location = new System.Drawing.Point(132, 115);
-            this.txtDataVenda.Multiline = true;
             this.txtDataVenda.Name = "txtDataVenda";
-            this.txtDataVenda.Size = new System.Drawing.Size(147, 29);
+            this.txtDataVenda.Size = new System.Drawing.Size(147, 20);
             this.txtDataVenda.TabIndex = 0;
             // 
             // label4
@@ -70,9 +69,8 @@ namespace OldProjetoDesktop
             // txtIdVenda
             // 
             this.txtIdVenda.Location = new System.Drawing.Point(12, 115);
-            this.txtIdVenda.Multiline = true;
             this.txtIdVenda.Name = "txtIdVenda";
-            this.txtIdVenda.Size = new System.Drawing.Size(114, 29);
+            this.txtIdVenda.Size = new System.Drawing.Size(114, 20);
             this.txtIdVenda.TabIndex = 0;
             // 
             // label1
@@ -116,9 +114,8 @@ namespace OldProjetoDesktop
             // txtCPFCliente
             // 
             this.txtCPFCliente.Location = new System.Drawing.Point(12, 172);
-            this.txtCPFCliente.Multiline = true;
             this.txtCPFCliente.Name = "txtCPFCliente";
-            this.txtCPFCliente.Size = new System.Drawing.Size(254, 29);
+            this.txtCPFCliente.Size = new System.Drawing.Size(254, 20);
             this.txtCPFCliente.TabIndex = 1;
             // 
             // label6
@@ -134,9 +131,8 @@ namespace OldProjetoDesktop
             // txtNomeCliente
             // 
             this.txtNomeCliente.Location = new System.Drawing.Point(272, 172);
-            this.txtNomeCliente.Multiline = true;
             this.txtNomeCliente.Name = "txtNomeCliente";
-            this.txtNomeCliente.Size = new System.Drawing.Size(776, 29);
+            this.txtNomeCliente.Size = new System.Drawing.Size(776, 20);
             this.txtNomeCliente.TabIndex = 2;
             // 
             // label7

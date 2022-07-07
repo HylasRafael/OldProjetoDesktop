@@ -42,7 +42,7 @@ namespace OldProjetoDesktop
             // btnExcluir
             // 
             this.btnExcluir.BackColor = System.Drawing.Color.Red;
-            this.btnExcluir.Location = new System.Drawing.Point(527, 503);
+            this.btnExcluir.Location = new System.Drawing.Point(393, 500);
             this.btnExcluir.Name = "btnExcluir";
             this.btnExcluir.Size = new System.Drawing.Size(129, 46);
             this.btnExcluir.TabIndex = 28;
@@ -53,7 +53,7 @@ namespace OldProjetoDesktop
             // btnAtualizar
             // 
             this.btnAtualizar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(94)))), ((int)(((byte)(20)))));
-            this.btnAtualizar.Location = new System.Drawing.Point(392, 503);
+            this.btnAtualizar.Location = new System.Drawing.Point(258, 500);
             this.btnAtualizar.Name = "btnAtualizar";
             this.btnAtualizar.Size = new System.Drawing.Size(129, 46);
             this.btnAtualizar.TabIndex = 27;
@@ -64,7 +64,7 @@ namespace OldProjetoDesktop
             // btnCancelar
             // 
             this.btnCancelar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(184)))), ((int)(((byte)(179)))));
-            this.btnCancelar.Location = new System.Drawing.Point(661, 503);
+            this.btnCancelar.Location = new System.Drawing.Point(527, 500);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(129, 46);
             this.btnCancelar.TabIndex = 29;
@@ -75,9 +75,9 @@ namespace OldProjetoDesktop
             // dgvProduto
             // 
             this.dgvProduto.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvProduto.Location = new System.Drawing.Point(68, 166);
+            this.dgvProduto.Location = new System.Drawing.Point(14, 165);
             this.dgvProduto.Name = "dgvProduto";
-            this.dgvProduto.Size = new System.Drawing.Size(662, 260);
+            this.dgvProduto.Size = new System.Drawing.Size(642, 260);
             this.dgvProduto.TabIndex = 32;
             this.dgvProduto.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCliente_CellContentClick);
             // 
@@ -96,7 +96,7 @@ namespace OldProjetoDesktop
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(232, 18);
+            this.label1.Location = new System.Drawing.Point(183, 20);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(305, 25);
             this.label1.TabIndex = 30;
@@ -107,7 +107,7 @@ namespace OldProjetoDesktop
             // 
             this.txtPesquisaProduto.Location = new System.Drawing.Point(14, 103);
             this.txtPesquisaProduto.Name = "txtPesquisaProduto";
-            this.txtPesquisaProduto.Size = new System.Drawing.Size(776, 20);
+            this.txtPesquisaProduto.Size = new System.Drawing.Size(642, 20);
             this.txtPesquisaProduto.TabIndex = 26;
             this.txtPesquisaProduto.TextChanged += new System.EventHandler(this.txtPesquisaCliente_TextChanged);
             // 
@@ -116,7 +116,7 @@ namespace OldProjetoDesktop
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(229)))), ((int)(((byte)(219)))));
-            this.ClientSize = new System.Drawing.Size(800, 567);
+            this.ClientSize = new System.Drawing.Size(677, 567);
             this.Controls.Add(this.btnExcluir);
             this.Controls.Add(this.btnAtualizar);
             this.Controls.Add(this.btnCancelar);
